@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Mart Product Locator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🛒 D-Mart Product Locator</h1>
+        <p>Find your products quickly and easily!</p>
+    </header>
+
+    <main class="container">
+
+        <section class="search-card">
+            <h2>Find Your Product</h2>
+            <p>Enter a product name to find its location.</p>
+
+            <label for="product">Product Name</label>
+
+            <input
+                type="text"
+                id="product"
+                placeholder="Example: Rice, Milk, Sugar"
+            >
+
+            <div class="button-group">
+                <button id="searchButton">🔍 Search Product</button>
+                <button id="voiceButton">🎤 Voice Search</button>
+                <button id="stopButton">⏹ Stop Voice</button>
+            </div>
+
+            <p id="message">Loading products...</p>
+        </section>
+
+        <section class="result-card">
+            <h2>📍 Product Details</h2>
+            <div id="result">
+                Your product location will appear here.
+            </div>
+        </section>
+
+        <section class="info-card">
+            <h3>How to Use</h3>
+            <ol>
+                <li>Select your preferred language.</li>
+                <li>Enter a product name or use voice search.</li>
+                <li>Select the correct product if multiple options appear.</li>
+                <li>View its floor, row, shelf and price.</li>
+                <li>Listen to the product details in your selected language.</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Smart Shopping | D-Mart Product Locator</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
